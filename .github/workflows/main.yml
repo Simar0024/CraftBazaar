@@ -19,4 +19,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Deploy static website to S3 bucket
-        run: aws s3 sync .s3://craftbazaar --delete
+        run: aws s3 sync . s3://craftbazaar --delete
